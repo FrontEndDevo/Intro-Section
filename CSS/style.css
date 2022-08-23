@@ -1,0 +1,95 @@
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul li a {
+  color: hsl(0deg, 0%, 41%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: hsl(0deg, 0%, 8%) !important;
+}
+header nav .drop-menu {
+  border-radius: 15px;
+}
+header nav .btns .login-btn {
+  color: hsl(0deg, 0%, 41%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header nav .btns .login-btn:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+header nav .btns .register-btn {
+  color: hsl(0deg, 0%, 41%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid;
+  border-color: hsl(0deg, 0%, 41%);
+  border-radius: 15px;
+  margin-left: 40px;
+}
+header nav .btns .register-btn:hover {
+  color: hsl(0deg, 0%, 8%);
+  border-color: hsl(0deg, 0%, 8%);
+}
+header .landing .remote-work {
+  font-weight: 600;
+  font-size: 85px;
+}
+@media (max-width: 767px) {
+  header .landing .remote-work {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+}
+header .landing .paragraph {
+  color: hsl(0deg, 0%, 41%);
+  text-align: justify;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  header .landing .paragraph {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+header .landing .learn-more {
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .landing .learn-more:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+}
+@media (max-width: 767px) {
+  header .landing .learn-more {
+    font-weight: 400;
+    font-size: 18px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+// Import (Variables)
+@use "Vars" as *;
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: $paragraph_font;
+    background-color: $white_color;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}

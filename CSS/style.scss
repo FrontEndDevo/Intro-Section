@@ -1,0 +1,96 @@
+// Import (Global Rules)
+@use "SASS/Global-Rules" as *;
+
+// Import (Variables)
+@use "SASS/Vars" as *;
+
+// Import (Mixins)
+@use "SASS/Mixins" as *;
+
+header{
+
+    nav{
+
+        ul{
+            li{
+                a{
+                    color: $gray_color;
+                    transition: $transition_period;
+                    &:hover{
+                        color: $black_color !important;
+                    }
+                }
+            }
+        }
+
+        .drop-menu{
+            border-radius: 15px;
+        }
+
+        .btns{
+
+            .login-btn{
+                    color: $gray_color;
+                    transition: $transition_period;
+                &:hover{
+                    color: $black_color;
+                }
+            }
+
+            .register-btn{
+                color: $gray_color;
+                transition: $transition_period;
+                border: 2px solid;
+                border-color: $gray_color;
+                border-radius: 15px;
+                margin-left: 40px;
+                &:hover{
+                    color: $black_color;
+                    border-color: $black_color;
+                }
+            }
+        }
+    }
+
+    .landing{
+
+        .remote-work{
+            font-weight: 600;
+            font-size: 85px;
+
+            @include responsive(mobile){
+                 font-size: 35px;
+                 margin-top: 40px;
+            }
+        }
+
+        .paragraph{
+            color: $gray_color;
+            text-align: justify;
+            margin-bottom: 60px;
+            font-size: $paragraph_font;
+
+            @include responsive(mobile){
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .learn-more{
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            &:hover{
+                background-color: $white_color;
+                color: $black_color;
+            }
+
+            @include responsive(mobile){
+                font-weight: 400;
+                font-size: $paragraph_font;
+                width: fit-content !important;
+            }
+        }
+    }
+}
